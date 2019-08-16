@@ -19,6 +19,7 @@ import java.net.Socket;
 public class MainActivity extends AppCompatActivity {
     EditText editText;
 
+    
     TextView textView;
     TextView textView2;
 
