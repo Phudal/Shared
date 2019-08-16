@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".ViewActivity">
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/record"
+            android:visibility="visible"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_layout">
+            <TextView
+                    android:layout_weight="3" android:layout_height="33dp" android:text="id : "
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/column_size" android:id="@+id/id"/>
+            <TextView
+                    android:layout_weight="1"
+                    android:layout_height="33dp"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/column_size"
+                    android:id="@+id/id_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/serial_layout">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="serial : "
+                    android:layout_weight="3"
+                    android:textSize="@dimen/column_size"
+                    android:id="@+id/serial"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/column_size"
+                    android:id="@+id/serial_view"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/name_layout">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="name : "
+                    android:layout_weight="3"
+                    android:textSize="@dimen/column_size"
+                    android:id="@+id/name"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="33dp"
+                      android:layout_weight="1"
+                      android:textSize="@dimen/column_size"
+                      android:id="@+id/name_view"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
