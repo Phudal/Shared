@@ -18,8 +18,6 @@ import java.net.Socket;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
-
-    
     TextView textView;
     TextView textView2;
 
@@ -36,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v){
                 final String data = editText.getText().toString();
@@ -47,18 +46,21 @@ public class MainActivity extends AppCompatActivity {
                 }).start();
             }
         });
-    Button button2 = findViewById(R.id.button2);
-    button2.setOnClickListener(new View.OnClickListener(){
-        @Override
-        public void onClick(View v){
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    startServer();
-                }
-            }).start();
-        }
-    });
+
+        Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v){
+                new Thread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        startServer();
+                    }
+                }).start();
+            }
+        });
     }
     public void printClientLog(final String data) {
         Log.d("MainActivity", data);
